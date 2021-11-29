@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+<head>
+    <!--Länkar stylesheet-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--Skapar en div för sidan-->
+  <div class = "container">
+    <!--Skapar en till div innuti där alla "sido" saker ligger i, små kommentarer om vad individuella saker gör tillkommer.-->
+    <div class = "side">
+      <img src="img/lundgrensheat.png"style="width:200px;height:200px;margin-top:10px"><!--Länkar logga till sido diven-->
+      <div id="mySidenav" class="sidenav"><!--Div för min side navigation dropdown-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About us</a><!--Länkar till alla sidor som ska ligga i dropdown listan-->
+        <a href="contact.html">Contact us</a>
+        <a href="sell-to-us.html">Sell to us</a>
+        <a href="documentation.html">Problems I've encountered</a>
+      </div>
+      <span style="color:black;font-size:20px;cursor:pointer" onclick="openNav()">&#9776; more</span>
+      <!--Script för sidenav-->
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      <!--Searchbar-->
+      <input type="text" name="search" placeholder="Search..">
+      <!--Här länkar jag till alla sidor som min sidopanel ska innehålla.-->
+      <p>
+        <a href="cart.html"><!--Länk-->
+        <img src="img/shoppingcart.png"style="width:20px;height;20px"><!--Länk till bild-->
+          Cart<!--Text om vad länken länkar till för sida-->
+        </a>
+      </p>
+      <!--Samma kod gäller för varje länk-->
+      <p>
+        <a href="login.html">
+          Log in
+        </a>
+      </p>
+      <h6>
+        __________________
+      </h6>
+      <p>
+        <a href="products.html">
+          BRANDS
+        </a>
+      </p>
+      <p>
+        <a href="collection/jackets.html">
+          JACKETS
+        </a>
+      </p>
+      <p>
+        <a href="collection/shirts.html">
+          SHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/knitwear.html">
+          KNITWEAR
+        </a>
+      </p>
+      <p>
+        <a href="collection/sweatshirts.html">
+          SWEATSHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/tshirts.html">
+          T-SHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/shoes.html">
+          SHOES
+        </a>
+      </p>
+      <p>
+        <a href="collection/pants.html">
+          PANTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/bags.html">
+          BAGS
+        </a>
+      </p>
+      <p>
+        <a href="collection/sunglasses.html">
+          SUNGLASSES
+        </a>
+      </p>
+      <p>
+        <a href="collection/accessories.html">
+          ACCESSORIES
+        </a>
+      </p>
+    </div>
+    <!--Skapar en div i min "container" där alla produkter kommer ligga i. Denna metod tillåter mig
+    att ha 2 div bredvid varnadra.-->
+    <div class ="content">
+      <div class="slideshow-container"><!--HTML kod för mitt bildspel-->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div><!--Visar bild 1 / 3-->
+          <img src="img/diorglasses.jpg" style="width:35%"><!--Bild på produkt i bilspel-->
+          <div class="text">New arrivals</div><!--Text i bildspel-->
+        </div>
+        <!--Samma kod gäller för varje produkt i bilspelet-->
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/palmangels-tshirt2.jpg" style="width:35%">
+          <div class="text">New arrivals</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/stoneislandhoodie.jpg" style="width:35%">
+          <div class="text">New arrivals</div>
+        </div>
+      </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <script>/*Javascript till bildspel*/
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000);
+        }
+        </script>
+        <h1 class="typewriter"> Welcome to Lundgrens Heat</h1><!--Text till min animation-->
+      <div class="flex-container"><!--Gemensam div som alla produkter använder-->
+        <div>
+            <a href="Products/Moncler-jacka.html"><!--Länkar till sida, samma sak förekommer för varje produkt-->
+                <div>
+                    <img style="width:100%" src="img/moncler-jacka.jpg"><!--Länkar en bild på produkten-->
+                    <div>Moncler Jacka</div><!--Namn på produkten-->
+                    <p>6899 kr</p><!--Pris på produkten-->
+                </div>
+            </a>
+        </div>
+        <!--Samma kommentarer gäller för varje produkt nedan-->
+        <div>
+            <a href="Products/palmangels-tshirt.html">
+                <div>
+                    <img style="width:100%" src="img/palmangels-tshirt.jpg">
+                    <div>Palm Angels Oversized T-shirt</div>
+                    <p>2599 kr</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="Products/Palmangels-tshirt2.html">
+                <div>
+                    <img style="width:100%" src="img/palmangels-tshirt2.jpg">
+                    <div>Palm Angels Kill the bear T-shirt</div>
+                    <p>2500 kr</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="Products/gucci-hoodie.html">
+                <div>
+                    <img style="width:100%" src="img/gucci-hoodie.jpg">
+                    <div>Gucci ZIP Hoodie</div>
+                    <p>3699 kr</p>
+                </div>
+            </a>
+        </div>
+        <div>
+          <a href="Products/moncler-jacketmaya.html">
+              <div>
+                  <img style="width:100%" src="img/Monclerjacket.jpg">
+                  <div>Moncler Maya Down jacket</div>
+                  <p>9099 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="Products/gucci-cap.html">
+              <div>
+                  <img style="width:100%" src="img/Guccicap.jpg">
+                  <div>Gucci cap</div>
+                  <p>1899 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="Products/Balenciagabag2.html">
+              <div>
+                  <img style="width:100%" src="img/Balenciagabag2.png">
+                  <div>Balenciaga bag</div>
+                  <p>4000 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="Products/burberry-hoodiegray.html">
+              <div>
+                  <img style="width:100%" src="img/Burberryhoodiegray.jpg">
+                  <div>Burberry monogram hoodie</div>
+                  <p>3000 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/balenciagabag.html">
+              <div>
+                  <img style="width:100%" src="../img/balenciagabag.jpg">
+                  <div>Balenciaga bag</div>
+                  <p>4000 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/stone-jacket.html">
+            <div>
+                <img style="width:100%" src="../img/stoneislandjacket.jpg">
+                <div>Stone Island Jacket</div>
+                <p>3500 kr</p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/moncler-jacka2.html">
+            <div>
+                <img style="width:100%" src="../img/Monclerjacket2.jpg">
+                <div>Moncler Puffer jacket</div>
+                <p>4899 kr</p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/moncler-jacka3.html">
+            <div>
+                <img style="width:100%" src="../img/Monclerjacket3.jpg">
+                <div>Moncler Cardigan</div>
+                <p>4599 kr</p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/gucci-shoes.html">
+              <div>
+                  <img style="width:100%" src="../img/Guccishoes.jpg">
+                  <div>Gucci Shoes</div>
+                  <p>4699 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+            <a href="../Products/stone-hoodie.html">
+                <div>
+                    <img style="width:100%" src="../img/stoneislandhoodie.jpg">
+                    <div>Stone Island Hoodie</div>
+                    <p>1500 kr</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="../Products/stone-hoodie2.html">
+                <div>
+                    <img style="width:100%" src="../img/stoneislandhoodie2.jpg">
+                    <div>Stone Island Hoodie</div>
+                    <p>1500 kr</p>
+                </div>
+            </a>
+        </div>
+        <div>
+          <a href="../Products/burberry-polo.html">
+              <div>
+                  <img style="width:100%" src="../img/Burberrypolo.png">
+                  <div>Burberry polo shirt</div>
+                  <p>2599 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/dior-glasses2.html">
+              <div>
+                  <img style="width:100%" src="../img/diorglasses2.jpg">
+                  <div>Dior glasses</div>
+                  <p>1500 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/stone-pants.html">
+              <div>
+                  <img style="width:100%" src="../img/stoneislandpolypants.jpg">
+                  <div>Stone Island Pants</div>
+                  <p>2399 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/stone-cargopants.html">
+              <div>
+                  <img style="width:100%" src="../img/stoneislandcargopants.jpg">
+                  <div>Stone Island Cargo Pants</div>
+                  <p>2599 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/dior-glasses.html">
+              <div>
+                  <img style="width:100%" src="../img/diorglasses.jpg">
+                  <div>Dior glasses</div>
+                  <p>1500 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/moncler-vest.html">
+              <div>
+                  <img style="width:100%" src="../img/Monclervest.jpg">
+                  <div>Moncler vest</div>
+                  <p>4599 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/moncler-vest2.html">
+              <div>
+                  <img style="width:100%" src="../img/Monclervest2.jpg">
+                  <div>Moncler vest slim</div>
+                  <p>3499 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="../Products/gucci-jacket.html">
+              <div>
+                  <img style="width:100%" src="../img/Guccijacket.jpg">
+                  <div>Gucci jacka</div>
+                  <p>4599 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="Products/burberry-cap.html">
+              <div>
+                  <img style="width:100%" src="img/burberrycap.jpg">
+                  <div>Burberry cap</div>
+                  <p>2099 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="Products/Palmangels-cap.html">
+              <div>
+                  <img style="width:100%" src="img/palmangelscap.jpg">
+                  <div>Palm Angels cap</div>
+                  <p>1599 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="Products/gucci-bag.html">
+              <div>
+                  <img style="width:100%" src="img/Guccibag.jpg">
+                  <div>Gucci bag</div>
+                  <p>2099 kr</p>
+              </div>
+          </a>
+        </div>
+        <div>
+          <a href="Products/burberry-wallet.html">
+              <div>
+                  <img style="width:100%" src="img/Burberrywallet.jpg">
+                  <div>Burberry wallet</div>
+                  <p>1599 kr</p>
+              </div>
+          </a>
+        </div>
+      </div>
+      <footer class="footer"><!--Skapar en footer i min Content div-->
+        <p>© 2021 All rights reserved.</p><!--Paragraf-->
+        <p>Lundgrens Heat since 2021</p>
+        <img src="img/lundgrensheat.png"style="width:150px;height:150px"><!--Länkar bild med style-->
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

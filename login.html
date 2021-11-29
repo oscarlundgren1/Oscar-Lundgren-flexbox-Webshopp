@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--Detta finns förklarat i index.html-->
+  <div class = "container">
+    <div class = "side">
+      <img src="img/lundgrensheat.png"
+      style="width:200px;height:200px;margin-top:10px">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us</a>
+        <a href="sell-to-us.html">Sell to us</a>
+      </div>
+      <span style="color:black;font-size:20px;cursor:pointer" onclick="openNav()">&#9776; more</span>
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      <input type="text" name="search" placeholder="Search..">
+      <p>
+        <a href="cart.html">
+        <img src="img/shoppingcart.png"style="width:20px;height;20px">
+          Cart
+        </a>
+      </p>
+      <p>
+        <a href="login.html">
+          Log in
+        </a>
+      </p>
+      <h6>
+        __________________
+      </h6>
+      <p>
+        <a href="index.html">
+          Home
+        </a>
+      </p>
+      <p>
+        <a href="products.html">
+          BRANDS
+        </a>
+      </p>
+      <p>
+        <a href="collection/jackets.html">
+          JACKETS
+        </a>
+      </p>
+      <p>
+        <a href="collection/shirts.html">
+          SHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/knitwear.html">
+          KNITWEAR
+        </a>
+      </p>
+      <p>
+        <a href="collection/sweatshirts.html">
+          SWEATSHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/tshirts.html">
+          T-SHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/shoes.html">
+          SHOES
+        </a>
+      </p>
+      <p>
+        <a href="collection/pants.html">
+          PANTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/bags.html">
+          BAGS
+        </a>
+      </p>
+      <p>
+        <a href="collection/sunglasses.html">
+          SUNGLASSES
+        </a>
+      </p>
+      <p>
+        <a href="collection/accessories.html">
+          ACCESSORIES
+        </a>
+      </p>
+    </div>
+    <div class ="content"><!--Detta finns förklarat i index.html-->
+        <form>
+            <h2>Register Form</h2><!--Rubrik-->
+            <div class="input-container"><!--Ny klass-->
+              <i class="fa fa-user icon"><img src="img/usernameicon.png" style="width:25px;height:25px;"></i><!--Länkar bild-->
+              <input class="input-field" type="text" placeholder="Username" name="usrnm"><!--Fält att skriva i samt placeholder-->
+            </div>
+            <div class="input-container">
+              <i class="fa fa-envelope icon"><img src="img/emailicon.png" style="width:25px;height:25px;"></i>
+              <input class="input-field" type="text" placeholder="Email" name="email">
+            </div>
+            <div class="input-container">
+              <i class="fa fa-key icon"><img src="img/passwordicon.png" style="width:25px;height:25px;"></i>
+              <input class="input-field" type="password" placeholder="Password" name="psw">
+            </div>
+            <button type="submit" class="btn">Register</button>
+          </form>
+          <h2>Already signed up? Login here</h2><!--Rubrik-->
+          <form>
+            <div class="container"><!--Ny klass-->
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me <!--Checkbox med "remember me"-->
+              </label>
+            </div>
+            <div class="container" style="background-color:#ffffff">
+              <button type="button" class="cancelbtn">Cancel</button><!--Knapp-->
+              <span class="psw">Forgot <a href="confirmation.html">password?</a></span>
+            </div>
+          </form>
+    </div>
+</body>
+</html>

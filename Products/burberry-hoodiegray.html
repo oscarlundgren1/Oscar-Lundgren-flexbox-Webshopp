@@ -1,0 +1,129 @@
+<!doctype html><!--Hela sidan finns kommenterad i balenciaga.html-->
+<html>
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class = "container">
+    <div class = "side">
+      <img src="../img/lundgrensheat.png"
+      style="width:200px;height:200px;margin-top:10px">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../about.html">About us</a>
+        <a href="../contact.html">Contact us</a>
+        <a href="../sell-to-us.html">Sell to us</a>
+      </div>
+      <span style="color:black;font-size:20px;cursor:pointer" onclick="openNav()">&#9776; more</span>
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      <input type="text" name="search" placeholder="Search..">
+      <p>
+        <a href="../cart.html">
+        <img src="../img/shoppingcart.png"style="width:20px;height;20px">
+          Cart
+        </a>
+      </p>
+      <p>
+        <a href="../login.html">
+          Log in
+        </a>
+      </p>
+      <h6>
+        __________________
+      </h6>
+      <p>
+        <a href="../index.html">
+          Home
+        </a>
+      </p>
+      <p>
+        <a href="../sell-to-us.html">
+          Sell to us
+        </a>
+      </p>
+      <p>
+        <a href="../products.html">
+          BRANDS
+        </a>
+      </p>
+      <p>
+        <a href="../collection/jackets.html">
+          JACKETS
+        </a>
+      </p>
+      <p>
+        <a href="../collection/shirts.html">
+          SHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="../collection/knitwear.html">
+          KNITWEAR
+        </a>
+      </p>
+      <p>
+        <a href="../collection/sweatshirts.html">
+          SWEATSHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="../collection/tshirts.html">
+          T-SHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="../collection/shoes.html">
+          SHOES
+        </a>
+      </p>
+      <p>
+        <a href="../collection/pants.html">
+          PANTS
+        </a>
+      </p>
+      <p>
+        <a href="../collection/bags.html">
+          BAGS
+        </a>
+      </p>
+      <p>
+        <a href="../collection/sunglasses.html">
+          SUNGLASSES
+        </a>
+      </p>
+      <p>
+        <a href="../collection/accessories.html">
+          ACCESSORIES
+        </a>
+      </p>
+    </div>
+    <div class ="content">
+        <div class="indcloth-box">
+            <div>
+                <a href="burberry-hoodiegray.html">
+                    <div>
+                        <img style="width:100%" src="../img/Burberryhoodiegray.jpg">
+                        <div>Burberry hoodie</div>
+                        <p>3000 kr</p>
+                        <li>Materials: 100% cotton</li>
+                        <li>Condition: Brand new</li>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <button2 onclick="document.location='../cart.html'">Add to cart</button2>
+        <form action="/action_page.php">
+          <label for="quantity">Add Quantity</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="5">
+        </form>
+    </div>
+</div>
+</body>
+</html>

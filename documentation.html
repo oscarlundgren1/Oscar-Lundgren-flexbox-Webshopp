@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--Kod om hela uppbyggnaden finns i "index.html"-->
+  <div class = "container">
+    <div class = "side">
+      <img src="img/lundgrensheat.png"style="width:200px;height:200px;margin-top:10px">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us</a>
+        <a href="sell-to-us.html">Sell to us</a>
+      </div>
+      <span style="color:black;font-size:20px;cursor:pointer" onclick="openNav()">&#9776; more</span>
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      <input type="text" name="search" placeholder="Search..">
+      <p>
+        <a href="cart.html">
+        <img src="img/shoppingcart.png"style="width:20px;height;20px">
+          Cart
+        </a>
+      </p>
+      <p>
+        <a href="login.html">
+          Log in
+        </a>
+      </p>
+      <h6>
+        __________________
+      </h6>
+      <p>
+        <a href="index.html">
+          Home
+        </a>
+      </p>
+      <p>
+        <a href="products.html">
+          BRANDS
+        </a>
+      </p>
+      <p>
+        <a href="collection/jackets.html">
+          JACKETS
+        </a>
+      </p>
+      <p>
+        <a href="collection/shirts.html">
+          SHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/knitwear.html">
+          KNITWEAR
+        </a>
+      </p>
+      <p>
+        <a href="collection/sweatshirts.html">
+          SWEATSHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/tshirts.html">
+          T-SHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/shoes.html">
+          SHOES
+        </a>
+      </p>
+      <p>
+        <a href="collection/pants.html">
+          PANTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/bags.html">
+          BAGS
+        </a>
+      </p>
+      <p>
+        <a href="collection/sunglasses.html">
+          SUNGLASSES
+        </a>
+      </p>
+      <p>
+        <a href="collection/accessories.html">
+          ACCESSORIES
+        </a>
+      </p>
+    </div>
+    <div class ="content">
+      <!--Punkt text för problem jag stött på-->
+      <h1>Problem jag stött på</h1>
+      <li>Jag hade mycket problem med att få Javascript att fungera <br> Jag löste det till slut men det tog ett tag.</li>
+      <h1> </h1><!--En h1 med blanksteg för en blank rad mellan punkterna-->
+      <li>Jag hade ett problem med att jag inte kunde länka<br>CSS till de filer som ligger i andra mappar<br>löste detta genom att skriva ../ före varje länk i alla<br>filer som ligger utanför "main folder"</li>
+      <h1> </h1>
+      <li>Jag hade ett problem med att saker jag ändrade i CSS inte ändrades<br>problemet var att jag hade style på .body och .html vilket<br>jag löste genom att helt enkelt ta bort dessa och lägga<br>till den CSSen i de klasser de ska vara i</li>
+  </div>
+</div>
+</body>
+</html>

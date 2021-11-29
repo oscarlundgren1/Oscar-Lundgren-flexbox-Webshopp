@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--Kod om hela uppbyggnaden finns i "index.html"-->
+  <div class = "container">
+    <div class = "side">
+      <img src="img/lundgrensheat.png"
+      style="width:200px;height:200px;margin-top:10px">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us</a>
+        <a href="sell-to-us.html">Sell to us</a>
+      </div>
+      <span style="color:black;font-size:20px;cursor:pointer" onclick="openNav()">&#9776; more</span>
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      <input type="text" name="search" placeholder="Search..">
+      <p>
+        <a href="cart.html">
+        <img src="img/shoppingcart.png"style="width:20px;height;20px">
+          Cart
+        </a>
+      </p>
+      <p>
+        <a href="login.html">
+          Log in
+        </a>
+      </p>
+      <h6>
+        __________________
+      </h6>
+      <p>
+        <a href="index.html">
+          Home
+        </a>
+      </p>
+      <p>
+        <a href="products.html">
+          BRANDS
+        </a>
+      </p>
+      <p>
+        <a href="collection/jackets.html">
+          JACKETS
+        </a>
+      </p>
+      <p>
+        <a href="collection/shirts.html">
+          SHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/knitwear.html">
+          KNITWEAR
+        </a>
+      </p>
+      <p>
+        <a href="collection/sweatshirts.html">
+          SWEATSHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/tshirts.html">
+          T-SHIRTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/shoes.html">
+          SHOES
+        </a>
+      </p>
+      <p>
+        <a href="collection/pants.html">
+          PANTS
+        </a>
+      </p>
+      <p>
+        <a href="collection/bags.html">
+          BAGS
+        </a>
+      </p>
+      <p>
+        <a href="collection/sunglasses.html">
+          SUNGLASSES
+        </a>
+      </p>
+      <p>
+        <a href="collection/accessories.html">
+          ACCESSORIES
+        </a>
+      </p>
+    </div>
+    <div class ="content">
+      <!--Skapar en div för allt som ska ligga i "cart"-->
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form>
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3><!--Rubrik-->
+                  <!--Fält att skriva i samt placeholders med instructioner om vad man ska skriva i fälten.-->
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Lundgren L Lundgren">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="Lundgren@example.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="Vägen 9">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="Göteborg">
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">Postkod</label>
+                      <input type="text" id="state" name="state" placeholder="43136">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-50">
+                  <h3>Payment</h3><!--H3 rubrik-->
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container"><!--Container med iconer-->
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <img src="img/visa.png"style="width:50px;height;50px"><!--Länkar bilder i container-->
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <img src="img/american.png"style="width:50px;height;50px">
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <img src="img/paypal.png"style="width:50px;height;50px">
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    <img src="img/mastercard.png"style="width:50px;height;50px">
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Lundgren Lundgren">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2021">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="123">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <buttoncart onclick="document.location='transaction.html'">Confirm purchase</buttoncart><!--Knapp som länkar till transaction.html-->
+            </form>
+          </div>
+        </div>
+        <div class="col-25"><!--Skapar class-->
+          <div class="container">
+              <span class="price" style="color:black">
+                <i class="fa fa-shopping-cart"></i>
+              </span>
+            </h2>
+            <p>Total <span class="price" style="color:black"><b>3699 kr</b></span></p>
+            <!--Detta finns förklarat i index.html-->
+            <div>
+              <a href="Products/gucci-hoodie.html">
+                  <div>
+                      <img style="width:100%" src="../img/gucci-hoodie.jpg">
+                      <div>Gucci ZIP Hoodie</div>
+                      <p>3699 kr</p>
+                  </div>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
